@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Permanent+Marker&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Splash&display=swap"
+        rel="stylesheet">
+    <title>Calculando el Total</title>
+</head>
+<body>
+    <main>
+        <section class="tarjeta">
+            <div id="img">
+                <img class="imagen_laptop" src="./assets/img/laptop.png" alt="Laptop Gamer AMD">
+            </div>
+
+            <div id="tarjeta">
+                <h1 class="titulo">Laptop Gamer AMD</h1>
+
+                <input id="cantidad" type="number" placeholder="Cantidad" />
+
+                <select id="color">
+                    <option hidden selected>Color</option>
+                    <option value="darkblue">Azul Oscuro</option>
+                    <option value="black">Negro</option>
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="silver">Plateado</option>
+                </select>
+
+                <p class="precio">Precio: $ 750.000</p>
+
+                <button id="btn">Calcular total</button>
+            </div>
+
+            <div class="interaccion">
+                <p>Total: $<span id="precioTotal">0</span></p>
+                <p>Cantidad: <span id="cantidadTotal">0</span></p>
+                <p>Color: <span class="color-circle" id="colorCircle"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
